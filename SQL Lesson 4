@@ -1,0 +1,17 @@
+//Question 1
+SELECT DISTINCT Director FROM movies;
+
+//Question 2
+SELECT * FROM movies ORDER BY year DESC LIMIT 4;
+
+//Question 3
+SELECT * FROM movies ORDER BY title ASC LIMIT 5;
+
+//Question 4
+SELECT * FROM movies ORDER BY title ASC LIMIT 5 OFFSET 5;
+
+//Question 5
+SELECT title FROM movies WHERE director = "John Lasseter" ORDER BY Length_minutes DESC LIMIT 1 OFFSET 2;
+
+//Question 6
+SELECT * FROM movies ORDER BY director ASC, year DESC LIMIT 10 OFFSET 0;
