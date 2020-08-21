@@ -1,0 +1,17 @@
+　//Question 1
+SELECT * FROM North_american_cities WHERE Country = "Canada";
+ 
+ //Question 2
+SELECT * FROM north_american_cities where Country like "United States" order by Latitude desc
+
+//Question 3
+SELECT * FROM north_american_cities WHERE Longitude < -87.629798 ORDER BY Latitude DESC
+
+//Question 4
+SELECT * FROM north_american_cities WHERE country = "Mexico" ORDER BY population LIMIT 2 OFFSET 1
+
+//Question 5
+SELECT * FROM north_american_cities WHERE country = "United States" ORDER BY population DESC LIMIT 2 OFFSET 2;
+
+//Question 6
+SELECT * FROM north_american_cities ORDER BY country, population DESC LIMIT 10
