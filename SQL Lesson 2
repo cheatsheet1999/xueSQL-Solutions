@@ -1,0 +1,8 @@
+//Question 1
+SELECT * FROM movies WHERE Id = 6
+
+// Question 5
+SELECT * FROM movies WHERE year >= 2010 and Length_minutes < 120;
+
+//Question 6
+SELECT Year, Length_minutes FROM movies WHERE year = 1999 or year = 2009
