@@ -1,0 +1,17 @@
+//Question 1
+SELECT * FROM movies where title LIKE "%Toy Story%";
+
+//Question 2
+SELECT * FROM movies where director = "John Lasseter";
+
+//Question 3
+SELECT * FROM movies where director != "John Lasseter";
+
+//Question 4
+SELECT * FROM movies WHERE title LIKE "WALL%"
+//Question 6
+SELECT title, director, year FROM movies where director LIKE "%Pete%"
+
+//Question 7
+SELECT * FROM movies WHERE director = "John Lasseter" 
+                     AND title LIKE "%Car%" OR title LIKE "%Toy Story%" AND year > 2000
