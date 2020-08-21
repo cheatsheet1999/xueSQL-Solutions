@@ -1,0 +1,14 @@
+//Question 1
+SELECT * FROM movies INNER JOIN boxoffcie on movies.id = boxoffice.movie_id
+
+//Question 2
+SELECT * FROM movies INNER JOIN boxoffice ON movies.id = boxoffice.movie_id WHERE international_sales > domestic_sales;
+
+//Question 3
+SELECT * FROM movies INNER JOIN boxoffice ON movies.id = boxoffice.movie_id ORDER BY rating DESC;
+
+//Question 4
+SELECT * FROM movies INNER JOIN boxoffice ON movies.id = boxoffice.movie_id ORDER BY rating DESC;
+
+//Questiton 5
+SELECT Director, international_sales FROM movies INNER JOIN boxoffice ON movies.id = boxoffice.movie_id ORDER BY International_sales DESC LIMIT 1;
