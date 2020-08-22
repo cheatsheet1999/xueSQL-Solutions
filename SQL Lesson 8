@@ -1,0 +1,5 @@
+//Question 1
+SELECT Name, Role FROM employees WHERE Building is NULL;
+
+//Question 2
+SELECT Building_name FROM Buildings LEFT JOIN Employees ON Buildings.Building_name = Employees.Building WHERE Building is NULL;
