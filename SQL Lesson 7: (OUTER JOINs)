@@ -1,0 +1,11 @@
+//Question 1
+SELECT DISTINCT building FROM employees WHERE buildings
+
+//Question 2
+SELECT * from Buildings
+
+//Question 3
+SELECT DISTINCT building_name, role FROM buildings LEFT JOIN employees ON buildings.building_name = employees.building 
+
+//Question 4
+SELECT DISTINCT Building, capacity FROM Employees INNER JOIN Buildings ON Employees.Building = Buildings.Building_name;
