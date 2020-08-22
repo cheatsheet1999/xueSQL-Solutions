@@ -1,0 +1,16 @@
+//Question 1
+SELECT Id, Title, (Domestic_sales+international_sales)/1000000 as Total FROM movies INNER JOIN Boxoffice ON movies.id = Boxoffice.Movie_id;
+
+//Question 2
+SELECT Id, Title, (Rating)*10 as Total FROM movies INNER JOIN Boxoffice ON movies.id = Boxoffice.Movie_id;
+
+//Question 3
+SELECT Id, Title, Year FROM movies INNER JOIN Boxoffice ON movies.id = Boxoffice.Movie_id WHERE Year % 2 = 0;
+
+//Question 4
+SELECT Title, (Domestic_sales + International_sales) / Length_minutes AS per FROM movies INNER JOIN
+Boxoffice ON movies.id = Boxoffice.Movie_id  WHERE Director = "John Lasseter" ORDER BY Per DESC LIMIT 3;
+
+//q5
+SELECT Title, length(Title),(Domestic_sales + International_sales) AS Total FROM movies INNER JOIN 
+Boxoffice ON movies.id = Boxoffice.Movie_id ORDER BY length(Title) DESC LIMIT 3;
