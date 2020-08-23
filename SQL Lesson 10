@@ -1,0 +1,20 @@
+//Question 1
+SELECT Name, MAX(Years_employed) FROM employees; 
+
+//Question 2
+SELECT Role, AVG(years_employed)FROM employees GROUP BY role
+
+//Question 3
+SELECT Building, SUM(Years_employed) 
+FROM Employees GROUP BY Building;
+
+//Question 4
+SELECT Building,COUNT(*) 
+FROM Employees 
+WHERE Building GROUP BY Building;
+
+//Question 5
+SELECT Years_employed,round(count(*)*1.0*100/(select count(*) from employees)) as rate
+FROM employees
+where Years_employed in(1,3,5,7)
+group by Years_employed
